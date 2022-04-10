@@ -49,10 +49,20 @@ if __name__ == '__main__':
 
     pages = [
         {
+            "id": "chrome",
+            "template": 'template_chrome.html',
+            "count": 17,
+            "width": 28,
+            "input_dir": "../../_assets/frames/pngs-v2",
+            "output_dir": "../../site/frames-chrome",
+            "letter_padding": 1,
+        },
+
+        {
             "id": "safari",
             "template": 'template_safari.html',
             "count": 9,
-            "width": 40,
+            "width": 28,
             "input_dir": "../../_assets/frames/pngs-v2-only-half",
             "output_dir": "../../site/frames",
             "letter_padding": 1,
@@ -79,29 +89,5 @@ if __name__ == '__main__':
 
 
 
-
-
-    # count = 17 
-    # count = 9
-
-    #width = 40
-    # The letter_padding helps deal with the difference in the
-    # lenght and height of letters when using straight html
-
-    # letter_padding = 1
-    # for i in range(1, count):
-    #     next_frame = i + 1
-    #     if next_frame == count:
-    #         next_frame = 1
-    #     input_path = f"/Users/alan/workshop/html-animation.alanwsmith.com/_assets/frames/pngs-v2-only-half/{i}.png"
-    #     output_path = f'/Users/alan/workshop/html-animation.alanwsmith.com/site/frames/{i}.html'
-    #     # input_path = f"/Users/alan/workshop/html-animation.alanwsmith.com/_assets/frames/pngs-v2/{i}.png"
-    #     # output_path = f'/Users/alan/workshop/html-animation.alanwsmith.com/site/frames-chrome/{i}.html'
-    #     output_ascii = main(width, input_path, output_path, letter_padding)
-    #     with open(output_path, 'w') as _out:
-    #         _out.write(frame.substitute(
-    #             next_frame = next_frame,
-    #             the_ascii = output_ascii
-    #         ))
 
 
